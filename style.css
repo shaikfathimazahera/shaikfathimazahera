@@ -1,0 +1,632 @@
+/* Importing the Google Fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetting default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; /* Setting default font family */
+}
+
+/* Setting global variables for colors and font sizes */
+:root {
+    --bg-color: #2a2a2a; /* Background color */
+    --second-bg-color: #202020; /* Secondary background color */
+    --text-color: #fff; /* Text color */
+    --second-color: #ccc; /* Secondary text color */
+    --main-color: #05b4ff; /* Main color */
+    --big-font: 5rem; /* Big font size */
+    --h2-font: 3rem; /* H2 font size */
+    --p-font: 1.1rem; /* Paragraph font size */
+}
+
+/* Styling the body */
+body {
+    background: var(--text-color); /* Setting background color */
+    color: var(--text-color); /* Setting text color */
+}
+
+/* Styling the header */
+header {
+    /* Fixed positioning to stay at the top */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%; /* Adding padding to the header */
+    border-bottom: 1px solid transparent; /* Adding a transparent border bottom */
+    transition: all .45s ease; /* Adding a transition effect */
+}
+
+/* Styling the logo */
+.logo {
+    color: var(--bg-color); /* Setting the color of the logo */
+    font-size: 35px; /* Setting the font size of the logo */
+    font-weight: 700; /* Setting the font weight of the logo */
+    letter-spacing: 1px; /* Adding letter spacing to the logo */
+}
+
+/* Styling the navigation list */
+.navlist {
+    display: flex; /* Displaying the list items horizontally */
+}
+
+/* Styling the navigation list items */
+.navlist a {
+    color: var(--bg-color); /* Setting the color of the navigation links */
+    font-size: 17px; /* Setting the font size of the navigation links */
+    font-weight: 500; /* Setting the font weight of the navigation links */
+    margin: 0 25px; /* Adding margin around the navigation links */
+    transition: all .45s ease; /* Adding a transition effect */
+}
+
+/* Styling the navigation links on hover */
+.navlist a:hover {
+    color: var(--main-color); /* Changing the color of the navigation links on hover */
+}
+
+/* Styling the active navigation link */
+.navlist a.active {
+    color: var(--main-color); /* Changing the color of the active navigation link */
+}
+
+/* Styling the menu icon */
+#menu-icon {
+    font-size: 35px; /* Setting the font size of the menu icon */
+    color: #ffff; /* Setting the color of the menu icon */
+    z-index: 1000; /* Setting the z-index of the menu icon */
+    cursor: pointer; /* Changing the cursor to a pointer */
+    margin-left: 25px; /* Adding margin to the left of the menu icon */
+    display: none; /* Hiding the menu icon by default */
+}
+
+/* Styling the sections */
+section {
+    padding: 160px 15% 120px; /* Adding padding to the sections */
+}
+
+/* Styling the home section */
+.home {
+    position: relative; /* Setting the position to relative */
+    height: 100vh; /* Setting the height to 100% of the viewport height */
+    width: 100%; /* Setting the width to 100% */
+    background-image: url(/Images/bgimage.jpg); /* Setting the background image */
+    background-size: cover; /* Setting the background size to cover */
+    background-position: center; /* Setting the background position to center */
+    display: flex; /* Displaying the content as a flexbox */
+    align-items: center; /* Aligning the items in the center vertically */
+    justify-content: flex-start; /* Justifying the content to the start horizontally */
+}
+
+/* Styling the slide */
+.slide {
+    margin-bottom: 20px; /* Adding margin to the bottom of the slide */
+}
+
+/* Styling the one class */
+.one {
+    display: inline-block; /* Displaying the element as inline-block */
+    margin-right: 15px; /* Adding margin to the right */
+    padding: 0 15px; /* Adding padding */
+    line-height: 32px; /* Setting the line height */
+    font-size: 20px; /* Setting the font size */
+    font-weight: 500; /* Setting the font weight */
+    border-radius: 5px; /* Adding border radius */
+    background: var(--main-color); /* Setting the background color */
+    color: var(--text-color); /* Setting the text color */
+}
+
+/* Styling the two class */
+.two {
+    display: inline-block; /* Displaying the element as inline-block */
+    color: var(--second-color); /* Setting the color */
+    font-size: 20px; /* Setting the font size */
+    font-weight: 500; /* Setting the font weight */
+}
+
+/* Styling the home-text */
+.home-text {
+    text-align: center; /* Aligning the text to the center */
+}
+
+/* Styling the home-text h1 */
+.home-text h2 {
+    font-size: var(--big-font); /* Setting the font size */
+    font-weight: 700; /* Setting the font weight */
+    color: var(--text-color); /* Setting the color */
+    line-height: 1.1; /* Setting the line height */
+    margin: 0 0 8px; /* Adding margin */
+}
+
+/* Styling the home-text h3 */
+.home-text h3 {
+    color: var(--text-color); /* Setting the color */
+    margin: 0 0 35px; /* Adding margin */
+    font-size: 2rem; /* Setting the font size */
+    font-weight: 700; /* Setting the font weight */
+    line-height: 1.1; /* Setting the line height */
+}
+
+/* Styling the home-text p */
+.home-text p {
+    color: var(--second-color); /* Setting the color */
+    font-size: var(--p-font); /* Setting the font size */
+    line-height: 1.8; /* Setting the line height */
+    margin-top: 40px; /* Adding margin to the top */
+}
+
+/* Styling the button */
+button {
+    display: inline-block; /* Displaying the button as inline-block */
+    align-items: center; /* Aligning the items in the center */
+    justify-content: center; /* Justifying the content to the center */
+}
+
+/* Styling the btn class */
+.btn {
+    display: inline-block; /* Displaying the button as inline-block */
+    padding: 12px; /* Adding padding */
+    background-color: var(--main-color); /* Setting the background color */
+    border-radius: 5px; /* Adding border radius */
+    color: var(--text-color); /* Setting the text color */
+    font-size: 1rem; /* Setting the font size */
+    letter-spacing: 1px; /* Adding letter spacing */
+    font-weight: 500; /* Setting the font weight */
+    transition: all .45s ease; /* Adding a transition effect */
+}
+
+/* Styling the button on hover */
+.btn:hover {
+    transform: scale(0.9); /* Scaling down the button on hover */
+}
+
+/* Styling the aboutme section */
+.aboutme {
+    display: grid; /* Displaying the content as a grid */
+    grid-template-columns: repeat(2, 1fr); /* Creating two columns with equal width */
+    align-items: center; /* Aligning the items in the center */
+    gap: 1.5rem; /* Adding gap between grid items */
+}
+
+/* Styling the aboutme-img */
+.aboutme-img img {
+    padding-bottom: 10%; /* Adding padding to the bottom */
+    max-width: 520px; /* Setting the maximum width */
+    height: auto; /* Setting the height to auto */
+    width: 100%; /* Setting the width to 100% */
+    border-radius: 5px; /* Adding border radius */
+}
+
+/* Styling the aboutme-text h2 */
+.aboutme-text h2 {
+    color: var(--bg-color); /* Setting the color */
+    font-size: var(--h2-font); /* Setting the font size */
+    line-height: 1; /* Setting the line height */
+    font-size: 60px; /* Setting the font size */
+}
+.aboutme-text h2 span{
+    color: var(--main-color);
+}
+/* Styling the aboutme-text h4 */
+.aboutme-text h4 {
+    font-size: 24px; /* Setting the font size */
+    font-weight: 600; /* Setting the font weight */
+    color: var(--bg-color); /* Setting the color */
+    line-height: 1.7; /* Setting the line height */
+    margin: 15px 0 30px; /* Adding margin */
+}
+
+/* Styling the aboutme-text p */
+.aboutme-text p {
+    color: var(--bg-color); /* Setting the color */
+    font-family: cursive; /* Setting the font family */
+    font-size: var(--p-font); /* Setting the font size */
+    line-height: 1.8; /* Setting the line height */
+}
+
+/* Styling the secondary-education section */
+.secondary-education {
+    background: var(--second-bg-color); /* Setting the background color */
+}
+
+/* Styling the main-text */
+.main-text {
+    text-align: center; /* Aligning the text to the center */
+}
+
+/* Styling the main-text p */
+.main-text p {
+    color: var(--second-color); /* Setting the color */
+    font-size: 15px; /* Setting the font size */
+    margin-bottom: 15px; /* Adding margin */
+}
+.main-text h2 span{
+    color: var(--main-color);
+}
+/* Styling the main-text h2 */
+.main-text h2 {
+    font-size: var(--h2-font); /* Setting the font size */
+    line-height: 1; /* Setting the line height */
+    color: var(--second-bg-color); /* Setting the color */
+}
+
+/* Styling the secondary-education-content */
+.secondary-education-content {
+    display: grid; /* Displaying the content as a grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto)); /* Creating responsive columns */
+    align-items: center; /* Aligning the items in the center */
+    gap: 2.5rem; /* Adding gap between grid items */
+    margin-top: 5rem; /* Adding margin to the top */
+}
+
+/* Styling the box class */
+.box {
+    background: var(--bg-color); /* Setting the background color */
+    padding: 35px 45px; /* Adding padding */
+    border-radius: 8px; /* Adding border radius */
+    transition: all .45s ease; /* Adding a transition effect */
+}
+/* Styling the box h3 */
+.box h3 {
+    font-size: 24px; /* Setting the font size */
+    font-weight: 600; /* Setting the font weight */
+    color: var(--main-color); /* Setting the color */
+    margin-bottom: 15px; /* Adding margin to the bottom */
+}
+/* Styling for paragraphs inside .box */
+.box p {
+    color: var(--second-color); /* Setting text color */
+    font-size: 1rem; /* Setting font size */
+    line-height: 1.8; /* Setting line height */
+    margin-bottom: 25px; /* Setting bottom margin */
+}
+
+/* Styling for box hover effect */
+.box:hover {
+    box-shadow: inset 0 0 20px var(--main-color); /* Adding box shadow on hover */
+    transform: translate(3px, -3px); /* Adding a slight translation on hover */
+}
+
+/* Styling for bar */
+.bar {
+    font-size: 23px; /* Setting font size */
+    margin-top: 5px; /* Setting top margin */
+    margin-bottom: 25px; /* Setting bottom margin */
+}
+
+/* Styling for bars in the skills section */
+.skills-bar .bar {
+    margin-top: 40px; /* Setting top margin */
+}
+
+/* Styling for first bar */
+.skills-bar .bar:first-child {
+    margin-top: 0; /* Removing top margin */
+}
+
+/* Styling for last bar */
+.skills-bar .bar:last-child {
+    margin-bottom: 0; /* Removing bottom margin */
+}
+
+/* Styling for span inside .info */
+.skills-bar .bar .info span {
+    font-size: 17px; /* Setting font size */
+    font-weight: 500; /* Setting font weight */
+    animation: fadeIn 0.5s 1s linear forwards; /* Adding a fade-in animation */
+    opacity: 0; /* Setting initial opacity to 0 */
+}
+
+/* Styling for progress line */
+.skills-bar .bar .progress-line {
+    position: relative; /* Setting relative positioning */
+    border-radius: 10px; /* Setting border radius */
+    width: 100%; /* Setting width */
+    height: 5px; /* Setting height */
+    background-color: var(--bg-color); /* Setting background color */
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards; /* Adding an animation */
+    transform: scaleX(0); /* Scaling the progress line to 0 */
+    transform-origin: left; /* Setting transform origin */
+}
+
+/* Keyframes for the animate animation */
+@keyframes animate {
+    100% {
+        transform: scaleX(1); /* Scaling the progress line to 1 */
+    }
+}
+
+/* Styling for span inside progress line */
+.skills-bar .bar .progress-line span {
+    height: 100%; /* Setting height to 100% */
+    background-color: #00a6ff; /* Setting background color */
+    position: absolute; /* Setting absolute positioning */
+    border-radius: 10px; /* Setting border radius */
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards; /* Adding an animation */
+    transform: scaleX(0); /* Scaling the progress line to 0 */
+    transform-origin: left; /* Setting transform origin */
+}
+
+/* Styling for HTML progress line */
+.progress-line.html span {
+    width: 80%; /* Setting width to 80% */
+}
+
+/* Styling for CSS progress line */
+.progress-line.css span {
+    width: 60%; /* Setting width to 60% */
+}
+
+/* Styling for Java progress line */
+.progress-line.java span {
+    width: 50%; /* Setting width to 50% */
+}
+
+/* Styling for Communication progress line */
+.progress-line.communication span {
+    width: 80%; /* Setting width to 80% */
+}
+/* Styling the certifications section */
+.certifications-content {
+    display: grid; /* Using grid layout for certifications content */
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); /* Creating responsive grid columns */
+    align-items: center; /* Aligning items in the center */
+    gap: 2.5rem; /* Adding gap between grid items */
+    margin-top: 5rem; /* Adding top margin */
+}
+/* Styling the row in certifications section */
+.row {
+    position: relative; /* Setting position to relative */
+    overflow: hidden; /* Hiding overflow */
+    border-radius: 5px; /* Adding border radius */
+    cursor: pointer; /* Changing cursor to pointer */
+}
+
+/* Styling the images in certifications section */
+.row img {
+    width: 100%; /* Setting image width to 100% */
+    border-radius: 5px; /* Adding border radius to images */
+    display: block; /* Displaying images as block elements */
+    transition: transform 8.5s; /* Adding transition effect to transform property */
+}
+
+/* Styling the layer in certifications section */
+ .layer {
+    width: 100%; /* Setting layer width to 100% */
+    height: 0; /* Setting initial height to 0 */
+    background: linear-gradient(rgba(0,0,0,0.1), #00a6ff); /* Adding gradient background */
+    position: absolute; /* Setting position to absolute */
+    border-radius: 8px; /* Adding border radius */
+    left: 0; /* Aligning to the left */
+    bottom: 0; /* Aligning to the bottom */
+    overflow: hidden; /* Hiding overflow */
+    display: flex; /* Displaying as flex */
+    flex-direction: column; /* Setting flex direction to column */
+    align-items: center; /* Aligning items in the center */
+    padding: 0 40px; /* Adding padding */
+    transition: height 0.5s; /* Adding transition effect to height */
+}
+/* Styling the heading in layer */
+.layer h5 {
+    font: 20px; /* Setting font size */
+    font-weight: 600; /* Setting font weight */
+    margin-bottom: 15px; /* Adding bottom margin */
+}
+
+/* Styling the paragraph in layer */
+.layer p {
+    color: #000; /* Setting text color */
+    font-size: 1.0rem; /* Setting font size */
+    line-height: 1.1; /* Setting line height */
+}
+
+/* Styling the span in paragraph */
+.layer p span {
+    color: var(--text-color); /* Setting text color */
+    font-size: 1rem; /* Setting font size */
+    line-height: 1.8; /* Setting line height */
+}
+
+/* Styling the icon in layer */
+.layer i {
+    color: var(--main-color); /* Setting icon color */
+    margin-top: 20px; /* Adding top margin */
+    font-size: 20px; /* Setting font size */
+    background-color: var(--text-color); /* Setting background color */
+    width: 60px; /* Setting width */
+    height: 60px; /* Setting height */
+    display: flex; /* Displaying as flex */
+    align-items: center; /* Aligning items in the center */
+    justify-content: center; /* Justifying content in the center */
+    border-radius: 58%; /* Adding border radius */
+}
+
+/* Styling the image hover effect */
+.row:hover img {
+    transform: scale(1.1); /* Scaling the image on hover */
+}
+
+/* Styling the layer hover effect */
+.row:hover .layer {
+    height: 100%; /* Expanding the layer on hover */
+}
+/* Hobbies Section Styling*/
+.hobbies {
+    padding: 2rem 2; /* Add padding of 4rem (top and bottom) and 0 for left and right */
+}
+/* Hobby items grid */
+.hobbies-content {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 1rem; /* Gap between items */
+    justify-content: center; /* Center the items horizontally */
+    margin-top: 2rem; /* Add some space at the top */
+}
+/* Styling the main-text p */
+.hobbies-heading{
+    text-align: center;
+}
+
+/* Styling the main-text h2 */
+.hobbies-heading h2 {
+    font-size: var(--h2-font); /* Setting the font size */
+    line-height: 1; /* Setting the line height */
+    color: var(--second-bg-color); /* Setting the color */
+}
+.hobbies-heading span{
+    color: var(--main-color);
+}
+
+/* Hobby item styling */
+.hobbies-row {
+    position: relative; /* Relative positioning for absolute child elements */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 50%; /* Make the images circular */
+    width: 150px; /* Set a fixed width for the image */
+    height: 150px; /* Set a fixed height for the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hobby item images */
+.hobbies-row img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Scale the image to cover */
+    border-radius: 50%; /* Make the images circular */
+    transition: transform 0.8s; /* Add a smooth transition effect */
+}
+
+/* Text displayed below the image */
+.hobbies-text {
+    position: absolute; /* Absolute positioning to overlay the text */
+    bottom: -50px; /* Move the text below the image */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center the text horizontally */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px 10px; /* Add padding to the text */
+    border-radius: 5px; /* Rounded corners for the text background */
+    transition: bottom 0.3s; /* Add a smooth transition effect */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+}
+
+/* Hobby names */
+.hobbies-text h5 {
+    color:var(--main-color); /* White text color */
+    font-size: 1rem; /* Font size for the hobby names */
+    margin: 0; /* Remove default margin */
+}
+
+/* Hover effect for the images */
+.hobbies-row:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Show the text below the image on hover */
+.hobbies-row:hover .hobbies-text {
+    bottom: 5px; /* Move the text above the image */
+}
+
+/* Styling the contact section */
+.contact {
+    background: var(--second-bg-color); /* Setting the background color */
+    display: grid; /* Using grid display */
+    grid-template-columns: repeat(2, 1fr); /* Creating two equal columns */
+    align-items: center; /* Aligning items to the center */
+    gap: 2.5rem; /* Adding gap between grid items */
+    padding: 100px 0; /* Adding padding to the contact section */
+    text-align: center; /* Aligning text to the center */
+}
+
+/* Styling the contact text */
+.contact-text h2 {
+    font-size: var(--h2-font); /* Setting the font size */
+    color: var(--main-color); /* Setting the text color */
+}
+.contact-text h2 span {
+    color: var(--text-color); /* Setting the text color */
+}
+
+/* Styling the contact list */
+.contact-list {
+    display: flex; /* Using flex display */
+    justify-content: center; /* Aligning items to the center */
+    margin-top: 10px; /* Adding top margin */
+    list-style: none; /* Removing default list styles */
+    padding: 0; /* Removing default padding */
+}
+
+/* Styling the contact list items */
+.contact-list li {
+    margin: 0 10px; /* Adding margin around each item */
+    display: inline-block; /* Displaying items inline */
+    margin-bottom: 10px; /* Adding bottom margin */
+}
+
+/* Styling the icons in the contact list */
+.contact-list i {
+    margin-right: 5px; /* Adding right margin */
+    font-size: 1.2rem; /* Setting the font size */
+    vertical-align: middle; /* Aligning vertically */
+}
+
+/* Styling the links in the contact list */
+.contact-list a {
+    text-decoration: none; /* Removing underline from links */
+    color: var(--text-color); /* Setting the text color */
+    font-size: 1.2rem; /* Setting the font size */
+    transition: color 0.3s; /* Adding transition effect to color */
+}
+
+/* Styling the links on hover */
+.contact-list a:hover {
+    color: var(--main-color); /* Changing text color on hover */
+}
+/* Styling for mobile devices */
+@media (max-width: 480px) {
+    /* Displaying the menu icon */
+    #menu-icon {
+        display: block;
+    }
+    /* Styling the navigation list */
+    .navlist {
+        position: absolute;
+        top: -1000px; /* Hiding the navigation list off-screen */
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    /* Styling the navigation list links */
+    .navlist a {
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+    /* Styling the navigation list links on hover */
+    .navlist a:hover {
+        color: var(--main-color);
+    }
+    /* Styling the active navigation list link */
+    .navlist a.active {
+        color: var(--main-color);
+    }
+    /* Opening the navigation list */
+    .navlist.open {
+        top: 100%; /* Bringing the navigation list into view */
+    }
+}
