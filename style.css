@@ -592,7 +592,7 @@ button {
     color: var(--main-color); /* Changing text color on hover */
 }
 /* Styling for mobile devices */
-@media (max-width: 480px) {
+ @media (max-width: 768px) {
     /* Displaying the menu icon */
     #menu-icon {
         display: block;
@@ -600,7 +600,7 @@ button {
     /* Styling the navigation list */
     .navlist {
         position: absolute;
-        top: -1000px; /* Hiding the navigation list off-screen */
+        top: 50px; /* Hiding the navigation list off-screen */
         right: 0;
         left: 0;
         display: flex;
@@ -627,6 +627,45 @@ button {
     }
     /* Opening the navigation list */
     .navlist.open {
-        top: 100%; /* Bringing the navigation list into view */
+        top:block ; /* Bringing the navigation list into view */
+    }
+    /* New styles for the responsive navigation */
+    .navlist.open {
+        display: block; /* Displaying the navigation list as block */
+        position: static; /* Changing the position to static */
+        margin-top: 20px; /* Adding top margin */
+        text-align: center; /* Centering the text */
+    }
+    .navlist {
+        display: none; /* Hiding the navigation list by default */
+    }
+    .home-text h2 {
+        align-items: center;
+        font-size: 40px; /* Adjusting the font size */
+        font-weight: 500; /* Setting the font weight */
+        color: var(--text-color); /* Setting the color */
+        line-height: 1; /* Setting the line height */
+        margin: 0 0 5px; /* Adding margin */
+    } 
+    /* Styling the aboutme section */
+    .aboutme {
+        grid-template-columns: 1fr; /* Displaying a single column */
+    }
+    /* Styling the aboutme-img */
+    .aboutme-img img {
+        margin: 0 auto; /* Centering the image */
+    }
+    /* Styling the aboutme-text */
+    .aboutme-text {
+        text-align: center; /* Centering the text */
+    }
+    .aboutme-text h2{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    /* Styling the hobbies-content */
+    .hobbies-content {
+        justify-content: center; /* Centering the items horizontally */
     }
 }
+
