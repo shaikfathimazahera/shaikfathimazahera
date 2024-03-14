@@ -99,7 +99,7 @@ section {
     position: relative; /* Setting the position to relative */
     height: 100vh; /* Setting the height to 100% of the viewport height */
     width: 100%; /* Setting the width to 100% */
-    background-image: url(/Images/bgimage.jpg); /* Setting the background image */
+    background-image: url(Images/bgimage.jpg); /* Setting the background image */
     background-size: cover; /* Setting the background size to cover */
     background-position: center; /* Setting the background position to center */
     display: flex; /* Displaying the content as a flexbox */
